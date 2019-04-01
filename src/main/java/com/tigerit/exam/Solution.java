@@ -2,6 +2,8 @@ package com.tigerit.exam;
 
 
 import static com.tigerit.exam.IO.*;
+import java.util.HashMap;
+import java.util.Scanner;
 
 /**
  * All of your application logic should be placed inside this class.
@@ -10,6 +12,18 @@ import static com.tigerit.exam.IO.*;
  * application's execution points start from inside run method.
  */
 public class Solution implements Runnable {
+ static String[] TableName = new String[15];
+        static int[][][] Table = new int[15][105][105];
+        static String[][] ColumnName = new String[15][105];
+        static int[] Row = new int[15];
+        static int[] Col = new int[15];
+        static String[] Current = new String[205];
+        static int[][] FinalTable = new int[10005][205];
+        static int[][] Temp = new int[10005][205];
+        static int[] temp = new int[205];
+        static int a, b;
+        static HashMap<String, Integer> NameReverse = new HashMap<String, Integer>();
+        static HashMap<String, Integer> Name = new HashMap<String, Integer>();
 
     static void formatcolumn(String g) {
             String x1 = new String();
@@ -87,18 +101,7 @@ public class Solution implements Runnable {
         //printLine(string);
         //printLine(integer);
 
-        static String[] TableName = new String[15];
-        static int[][][] Table = new int[15][105][105];
-        static String[][] ColumnName = new String[15][105];
-        static int[] Row = new int[15];
-        static int[] Col = new int[15];
-        static String[] Current = new String[205];
-        static int[][] FinalTable = new int[10005][205];
-        static int[][] Temp = new int[10005][205];
-        static int[] temp = new int[205];
-        static int a, b;
-        static HashMap<String, Integer> NameReverse = new HashMap<String, Integer>();
-        static HashMap<String, Integer> Name = new HashMap<String, Integer>();
+       
      
         
         
